@@ -1,0 +1,128 @@
+{
+  "performanceTest": {
+    "metadata": {
+      "testId": "perf-2023-07",
+      "iterations": 1000000,
+      "timestamp": "2023-07-21T09:30:00Z"
+    },
+    "dataset": [
+      {
+        "userId": "5f9d1b2e-7cae-4f3a-904e",
+        "profile": {
+          "username": "john_doe",
+          "email": "john@example.com",
+          "age": 28,
+          "isActive": true,
+          "preferences": {
+            "theme": "dark",
+            "notifications": {
+              "email": true,
+              "push": false
+            }
+          }
+        },
+        "transactions": [
+          {
+            "txnId": "TX1001",
+            "amount": 125.75,
+            "currency": "USD",
+            "items": [
+              {
+                "sku": "PROD-001",
+                "name": "Wireless Mouse",
+                "unitPrice": 25.15,
+                "quantity": 5
+              },
+              {
+                "sku": "PROD-005",
+                "name": "Keyboard Cover",
+                "unitPrice": 12.5,
+                "quantity": 2
+              }
+            ],
+            "timestamp": "2023-07-20T14:30:15Z"
+          },
+          {
+            "txnId": "TX1002",
+            "amount": 89.99,
+            "currency": "EUR",
+            "items": [
+              {
+                "sku": "PROD-012",
+                "name": "USB-C Cable",
+                "unitPrice": 9.99,
+                "quantity": 9
+              }
+            ],
+            "timestamp": "2023-07-21T08:45:00Z"
+          }
+        ]
+      },
+      {
+        "userId": "8e2a3b4c-1d5f-6a7b",
+        "profile": {
+          "username": "jane_smith",
+          "email": "jane@test.org",
+          "age": 34,
+          "isActive": false,
+          "preferences": {
+            "theme": "light",
+            "notifications": {
+              "email": false,
+              "push": true
+            }
+          }
+        },
+        "transactions": [
+          {
+            "txnId": "TX2001",
+            "amount": 299.95,
+            "currency": "GBP",
+            "items": [
+              {
+                "sku": "PROD-101",
+                "name": "Bluetooth Speaker",
+                "unitPrice": 59.99,
+                "quantity": 5
+              },
+              {
+                "sku": "PROD-205",
+                "name": "Smart Watch",
+                "unitPrice": 199.95,
+                "quantity": 1
+              }
+            ],
+            "timestamp": "2023-07-19T17:15:30Z"
+          }
+        ]
+      }
+    ],
+    "statistics": {
+      "totalUsers": 2,
+      "totalTransactions": 3,
+      "totalAmounts": {
+        "USD": 125.75,
+        "EUR": 89.99,
+        "GBP": 299.95
+      },
+      "avgTransaction": {
+        "USD": 125.75,
+        "EUR": 89.99,
+        "GBP": 299.95
+      }
+    },
+    "systemInfo": {
+      "os": "Linux 5.15.0-76-generic",
+      "runtime": {
+        "name": "Node.js",
+        "version": "v18.16.0"
+      },
+      "memoryUsage": {
+        "rss": 256.54,
+        "heapTotal": 512.0,
+        "heapUsed": 234.22,
+        "external": 45.67
+      }
+    }
+  }
+}
